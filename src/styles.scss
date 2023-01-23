@@ -1,0 +1,78 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif ;
+    background: linear-gradient(to right, #407C87, #A5DBDD)
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 50%;
+    background-color: #EEF1F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 60px;
+    overflow: hidden;
+    &_results{
+        width: 100%;
+        height: 20%;
+        background-color: darken(#D3E1E2,10);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        .results{
+            width:80%;
+            height: auto;
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+            font-size: 30px;
+            color: #EEF1F6;
+        }
+        
+    }
+    &_button{
+        width: 100%;
+        height:80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+ 
+        .button-row{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            
+        }
+       
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0px 2px 3px grey;
+        
+    }
+    button:hover{
+        background-color: #D3E1E2;
+    }
+    button:active{
+        background-color: darken(#D3E1E2,10);
+        color: #EEF1F6;
+    }
+    .btn-double{
+        width: 120px;
+        background-color: darken(#D3E1E2,10);
+        color: #EEF1F6;
+        
+    }
+}
+
